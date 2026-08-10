@@ -1,0 +1,20 @@
+{
+  "name": "verdant-grounds-site",
+  "version": "1.0.0",
+  "description": "Animated demo landscaping/gardening company website.",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahDarnell/verdant-grounds-site.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/NoahDarnell/verdant-grounds-site#readme",
+  "devDependencies": {
+    "vite": "^8.2.1"
+  }
+}
