@@ -41,31 +41,6 @@ button{font-family:inherit;}
 
 ::selection{background:var(--gold-light);color:var(--green-900);}
 
-/* Hide native cursor for custom cursor on fine pointers */
-@media (hover:hover) and (pointer:fine){
-  body{cursor:none;}
-  a,button{cursor:none;}
-}
-
-.cursor-dot,.cursor-ring{
-  position:fixed;top:0;left:0;
-  border-radius:50%;
-  pointer-events:none;
-  z-index:9999;
-  transform:translate(-50%,-50%);
-  mix-blend-mode:difference;
-}
-.cursor-dot{width:6px;height:6px;background:#fff;transition:opacity .2s;}
-.cursor-ring{
-  width:34px;height:34px;
-  border:1px solid #fff;
-  transition:width .25s var(--ease),height .25s var(--ease),opacity .2s, border-color .2s;
-}
-.cursor-ring.active{width:64px;height:64px;background:rgba(255,255,255,0.08);}
-@media (hover:none), (pointer:coarse){
-  .cursor-dot,.cursor-ring{display:none;}
-}
-
 /* ---------- Loader ---------- */
 .loader{
   position:fixed;inset:0;z-index:10000;

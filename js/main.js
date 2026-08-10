@@ -9,29 +9,6 @@ window.addEventListener('load', () => {
 /* ---------- Year ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ---------- Custom cursor ---------- */
-const cursorDot = document.getElementById('cursorDot');
-const cursorRing = document.getElementById('cursorRing');
-let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-
-if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursorDot.style.left = mouseX + 'px';
-    cursorDot.style.top = mouseY + 'px';
-  });
-  gsap.ticker.add(() => {
-    ringX += (mouseX - ringX) * 0.18;
-    ringY += (mouseY - ringY) * 0.18;
-    cursorRing.style.left = ringX + 'px';
-    cursorRing.style.top = ringY + 'px';
-  });
-  document.querySelectorAll('[data-hover], a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => cursorRing.classList.add('active'));
-    el.addEventListener('mouseleave', () => cursorRing.classList.remove('active'));
-  });
-}
-
 /* ---------- Nav scroll state ---------- */
 const nav = document.getElementById('nav');
 ScrollTrigger.create({
