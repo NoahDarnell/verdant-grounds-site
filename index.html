@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Verdant Grounds — Landscaping & Garden Design</title>
+<meta name="description" content="Verdant Grounds — full-service landscaping, garden design, and outdoor living spaces." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-leaf">🌿</div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">✦</span> Verdant&nbsp;Grounds
+    </a>
+    <nav class="nav-links">
+      <a href="#services" data-hover>Services</a>
+      <a href="#work" data-hover>Work</a>
+      <a href="#process" data-hover>Process</a>
+      <a href="#testimonials" data-hover>Reviews</a>
+      <a href="#contact" class="nav-cta" data-hover>Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#work">Work</a>
+  <a href="#process">Process</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#contact">Get a Quote</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <svg class="hero-grid" width="100%" height="100%"><defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+    </div>
+
+    <div class="floating-leaves" id="floatingLeaves"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal-up">Landscaping · Garden Design · Outdoor Living</p>
+      <h1 class="hero-title">
+        <span class="line reveal-line"><span>We grow</span></span>
+        <span class="line reveal-line"><span class="italic">extraordinary</span></span>
+        <span class="line reveal-line"><span>gardens.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up">Family-run landscape design and build studio crafting gardens people actually live in — from first sketch to last stone set.</p>
+      <div class="hero-cta reveal-up">
+        <a href="#contact" class="btn btn-primary" data-hover><span>Start your project</span></a>
+        <a href="#work" class="btn btn-ghost" data-hover><span>See our work</span></a>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-line-fill"></div></div>
+    </div>
+
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>Design &nbsp;✦&nbsp; Build &nbsp;✦&nbsp; Planting &nbsp;✦&nbsp; Hardscape &nbsp;✦&nbsp; Irrigation &nbsp;✦&nbsp; Lighting &nbsp;✦&nbsp; Maintenance &nbsp;✦&nbsp; </span>
+        <span>Design &nbsp;✦&nbsp; Build &nbsp;✦&nbsp; Planting &nbsp;✦&nbsp; Hardscape &nbsp;✦&nbsp; Irrigation &nbsp;✦&nbsp; Lighting &nbsp;✦&nbsp; Maintenance &nbsp;✦&nbsp; </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat" data-count="14">
+      <div class="stat-num"><span class="num">0</span><span class="suffix">+</span></div>
+      <div class="stat-label">Years designing gardens</div>
+    </div>
+    <div class="stat" data-count="240">
+      <div class="stat-num"><span class="num">0</span><span class="suffix">+</span></div>
+      <div class="stat-label">Projects completed</div>
+    </div>
+    <div class="stat" data-count="98">
+      <div class="stat-num"><span class="num">0</span><span class="suffix">%</span></div>
+      <div class="stat-label">Clients who refer us</div>
+    </div>
+    <div class="stat" data-count="12">
+      <div class="stat-num"><span class="num">0</span><span class="suffix"></span></div>
+      <div class="stat-label">In-house horticulturists</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <p class="eyebrow reveal-up">What we do</p>
+      <h2 class="section-title reveal-up">Every layer of your outdoor space, handled by one team.</h2>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">🌱</div>
+        <h3>Garden Design</h3>
+        <p>Custom planting plans built around your site's light, soil, and the way you actually want to use the space.</p>
+        <span class="service-num">01</span>
+      </article>
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">🪨</div>
+        <h3>Hardscaping</h3>
+        <p>Patios, walls, pathways and stonework that give structure to the garden year-round.</p>
+        <span class="service-num">02</span>
+      </article>
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">💧</div>
+        <h3>Irrigation Systems</h3>
+        <p>Smart, water-efficient irrigation designed and installed to keep everything thriving on autopilot.</p>
+        <span class="service-num">03</span>
+      </article>
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">✨</div>
+        <h3>Landscape Lighting</h3>
+        <p>Low-voltage lighting design that makes the garden just as good after dark as it is at noon.</p>
+        <span class="service-num">04</span>
+      </article>
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">🌳</div>
+        <h3>Tree & Shrub Care</h3>
+        <p>Pruning, health diagnostics, and seasonal care from certified arborists on staff.</p>
+        <span class="service-num">05</span>
+      </article>
+      <article class="service-card reveal-up" data-tilt>
+        <div class="service-icon">🧰</div>
+        <h3>Ongoing Maintenance</h3>
+        <p>Scheduled visits that keep the garden looking like day one, season after season.</p>
+        <span class="service-num">06</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK / GALLERY -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow reveal-up">Selected work</p>
+      <h2 class="section-title reveal-up">A few gardens we're proud of.</h2>
+    </div>
+
+    <div class="gallery">
+      <figure class="gallery-item big reveal-up">
+        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=1200&auto=format&fit=crop" alt="Modern backyard garden with stone patio" loading="lazy">
+        <figcaption><span>Coastal Modern</span><small>La Jolla, CA — Full redesign</small></figcaption>
+      </figure>
+      <figure class="gallery-item reveal-up">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop" alt="Lush green garden path" loading="lazy">
+        <figcaption><span>The Hidden Path</span><small>Ojai, CA</small></figcaption>
+      </figure>
+      <figure class="gallery-item reveal-up">
+        <img src="https://images.unsplash.com/photo-1601905000037-3c33d0e1c0e4?q=80&w=800&auto=format&fit=crop" alt="Backyard patio with string lights" loading="lazy">
+        <figcaption><span>Evening Terrace</span><small>Laguna Beach, CA</small></figcaption>
+      </figure>
+      <figure class="gallery-item reveal-up">
+        <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=800&auto=format&fit=crop" alt="Raised bed vegetable garden" loading="lazy">
+        <figcaption><span>Kitchen Garden</span><small>Fallbrook, CA</small></figcaption>
+      </figure>
+      <figure class="gallery-item big reveal-up">
+        <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?q=80&w=1200&auto=format&fit=crop" alt="Pool side landscaping" loading="lazy">
+        <figcaption><span>Poolside Oasis</span><small>Rancho Santa Fe, CA</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-head light">
+      <p class="eyebrow reveal-up">How it works</p>
+      <h2 class="section-title reveal-up">From overgrown to unforgettable, in four steps.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"><div class="timeline-line-fill"></div></div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot">1</div>
+        <div class="timeline-content">
+          <h3>Site Walk & Consultation</h3>
+          <p>We walk the property with you, talk through how you want to live outside, and take stock of soil, sun, and drainage.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot">2</div>
+        <div class="timeline-content">
+          <h3>Design & Proposal</h3>
+          <p>You get a full concept — planting plan, materials, and a transparent quote before anything is scheduled.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot">3</div>
+        <div class="timeline-content">
+          <h3>Build</h3>
+          <p>Our crews handle grading, hardscape, planting and irrigation — with weekly updates so you always know where things stand.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot">4</div>
+        <div class="timeline-content">
+          <h3>Grow & Maintain</h3>
+          <p>We stick around with seasonal maintenance plans so the garden keeps getting better, not just surviving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <p class="eyebrow reveal-up">Kind words</p>
+      <h2 class="section-title reveal-up">Don't take our word for it.</h2>
+    </div>
+
+    <div class="testimonial-track-wrap reveal-up">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <p>"They turned a patch of dirt and dead grass into the best room in our house — it just happens to not have a roof."</p>
+          <div class="testimonial-author"><strong>Maya R.</strong><span>Encinitas, CA</span></div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Communicative, on time, and the planting plan actually accounted for how little I want to garden myself. 10/10."</p>
+          <div class="testimonial-author"><strong>Daniel P.</strong><span>Carlsbad, CA</span></div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Our water bill went down and the yard has never looked better. The irrigation redesign alone was worth it."</p>
+          <div class="testimonial-author"><strong>Sarah K.</strong><span>San Marcos, CA</span></div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Professional from the first call to the final walkthrough. They treated our tiny lot like it was a five-acre estate."</p>
+          <div class="testimonial-author"><strong>The Ortiz Family</strong><span>Oceanside, CA</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <h2 class="reveal-up">Ready to stop staring at the same yard?</h2>
+    <a href="#contact" class="btn btn-light reveal-up" data-hover><span>Book a free consultation</span></a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="section-title">Let's talk about your yard.</h2>
+        <p class="contact-copy">Tell us a little about the space and what you're picturing. We'll get back to you within one business day with next steps.</p>
+        <ul class="contact-details">
+          <li><span>📍</span> Serving San Diego &amp; Orange County, CA</li>
+          <li><span>✉️</span> hello@verdantgrounds.example</li>
+          <li><span>📞</span> (555) 013-0420</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal-up" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <input type="text" id="name" required placeholder=" ">
+            <label for="name">Full name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="field">
+          <input type="text" id="address" placeholder=" ">
+          <label for="address">Property location</label>
+        </div>
+        <div class="field">
+          <textarea id="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Tell us about your project</label>
+        </div>
+        <button type="submit" class="btn btn-primary" data-hover><span>Send message</span></button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="#top" class="brand">✦ Verdant Grounds</a>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Verdant Grounds. All rights reserved.</span>
+    <span>Design demo — built for testing.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
