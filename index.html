@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Verdant Grounds — Landscaping & Garden Design</title>
-<meta name="description" content="Verdant Grounds — full-service landscaping, garden design, and outdoor living spaces." />
+<title>Verdant Grounds - Landscaping & Garden Design</title>
+<meta name="description" content="Verdant Grounds: full-service landscaping, garden design, and outdoor living spaces." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -27,6 +28,7 @@
       <a href="#services" data-hover>Services</a>
       <a href="#work" data-hover>Work</a>
       <a href="#process" data-hover>Process</a>
+      <a href="#team" data-hover>Team</a>
       <a href="#testimonials" data-hover>Reviews</a>
       <a href="#contact" class="nav-cta" data-hover>Get a Quote</a>
     </nav>
@@ -38,6 +40,7 @@
   <a href="#services">Services</a>
   <a href="#work">Work</a>
   <a href="#process">Process</a>
+  <a href="#team">Team</a>
   <a href="#testimonials">Reviews</a>
   <a href="#contact">Get a Quote</a>
 </div>
@@ -62,16 +65,11 @@
         <span class="line reveal-line"><span class="italic">extraordinary</span></span>
         <span class="line reveal-line"><span>gardens.</span></span>
       </h1>
-      <p class="hero-sub reveal-up">Family-run landscape design and build studio crafting gardens people actually live in — from first sketch to last stone set.</p>
+      <p class="hero-sub reveal-up">Family-run landscape design and build studio crafting gardens people actually live in, from first sketch to last stone set.</p>
       <div class="hero-cta reveal-up">
-        <a href="#contact" class="btn btn-primary" data-hover><span>Start your project</span></a>
+        <a href="#contact" class="btn btn-primary" data-hover><span>Get a quote</span></a>
         <a href="#work" class="btn btn-ghost" data-hover><span>See our work</span></a>
       </div>
-    </div>
-
-    <div class="scroll-cue">
-      <span>Scroll</span>
-      <div class="scroll-line"><div class="scroll-line-fill"></div></div>
     </div>
 
     <div class="hero-marquee">
@@ -153,37 +151,76 @@
   <section class="work" id="work">
     <div class="section-head">
       <p class="eyebrow reveal-up">Selected work</p>
-      <h2 class="section-title reveal-up">A few gardens we're proud of.</h2>
+      <h2 class="section-title reveal-up">Drag the line. See the difference.</h2>
     </div>
 
-    <div class="gallery">
-      <figure class="gallery-item big reveal-up">
-        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=1200&auto=format&fit=crop" alt="Modern backyard garden with stone patio" loading="lazy">
-        <figcaption><span>Coastal Modern</span><small>La Jolla, CA — Full redesign</small></figcaption>
-      </figure>
-      <figure class="gallery-item reveal-up">
-        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop" alt="Lush green garden path" loading="lazy">
-        <figcaption><span>The Hidden Path</span><small>Ojai, CA</small></figcaption>
-      </figure>
-      <figure class="gallery-item reveal-up">
-        <img src="https://images.unsplash.com/photo-1601905000037-3c33d0e1c0e4?q=80&w=800&auto=format&fit=crop" alt="Backyard patio with string lights" loading="lazy">
-        <figcaption><span>Evening Terrace</span><small>Laguna Beach, CA</small></figcaption>
-      </figure>
-      <figure class="gallery-item reveal-up">
-        <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=800&auto=format&fit=crop" alt="Raised bed vegetable garden" loading="lazy">
-        <figcaption><span>Kitchen Garden</span><small>Fallbrook, CA</small></figcaption>
-      </figure>
-      <figure class="gallery-item big reveal-up">
-        <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?q=80&w=1200&auto=format&fit=crop" alt="Pool side landscaping" loading="lazy">
-        <figcaption><span>Poolside Oasis</span><small>Rancho Santa Fe, CA</small></figcaption>
-      </figure>
+    <div class="ba-grid">
+      <div class="ba-slider ba-featured reveal-up" data-ba>
+        <div class="ba-frame" tabindex="0" role="slider" aria-label="Coastal Modern, before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1719324923413-ba0a066465c9?q=80&w=1400&auto=format&fit=crop" alt="After: Coastal Modern backyard with stone patio and lush planting">
+          <div class="ba-before-wrap">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1729058015948-592a8e4a1772?q=80&w=1400&auto=format&fit=crop" alt="Before: bare, patchy lawn with no planting or hardscape">
+          </div>
+          <span class="ba-tag ba-tag-before">Before</span>
+          <span class="ba-tag ba-tag-after">After</span>
+          <div class="ba-handle"><i class="ph-bold ph-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-caption"><span>Coastal Modern</span><small>La Jolla, CA &middot; Full redesign, 7-week build</small></div>
+      </div>
+
+      <div class="ba-slider reveal-up" data-ba>
+        <div class="ba-frame" tabindex="0" role="slider" aria-label="Poolside Oasis, before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1635111300299-e6e677daf7b7?q=80&w=1000&auto=format&fit=crop" alt="After: landscaped poolside with layered planting">
+          <div class="ba-before-wrap">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1681853108586-f29b4ef5c0fb?q=80&w=1000&auto=format&fit=crop" alt="Before: overgrown, neglected yard">
+          </div>
+          <span class="ba-tag ba-tag-before">Before</span>
+          <span class="ba-tag ba-tag-after">After</span>
+          <div class="ba-handle"><i class="ph-bold ph-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-caption"><span>Poolside Oasis</span><small>Rancho Santa Fe, CA</small></div>
+      </div>
+
+      <div class="ba-slider reveal-up" data-ba>
+        <div class="ba-frame" tabindex="0" role="slider" aria-label="Evening Terrace, before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1618606338706-fc3bad33dbe6?q=80&w=1000&auto=format&fit=crop" alt="After: backyard patio with string lights and finished landscaping">
+          <div class="ba-before-wrap">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1780478474158-b4d996f5ef74?q=80&w=1000&auto=format&fit=crop" alt="Before: plain, unlandscaped yard">
+          </div>
+          <span class="ba-tag ba-tag-before">Before</span>
+          <span class="ba-tag ba-tag-after">After</span>
+          <div class="ba-handle"><i class="ph-bold ph-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-caption"><span>Evening Terrace</span><small>Laguna Beach, CA</small></div>
+      </div>
+    </div>
+
+    <div class="work-more">
+      <h3 class="reveal-up">More from the portfolio</h3>
+      <div class="gallery">
+        <figure class="gallery-item big reveal-up">
+          <img src="https://images.unsplash.com/photo-1666228347956-eec27310e2d2?q=80&w=1200&auto=format&fit=crop" alt="Lush green garden path" loading="lazy">
+          <figcaption><span>The Hidden Path</span><small>Ojai, CA</small></figcaption>
+        </figure>
+        <figure class="gallery-item reveal-up">
+          <img src="https://images.unsplash.com/photo-1601001815894-4bb6c81416d7?q=80&w=800&auto=format&fit=crop" alt="Raised bed vegetable garden" loading="lazy">
+          <figcaption><span>Kitchen Garden</span><small>Fallbrook, CA</small></figcaption>
+        </figure>
+        <figure class="gallery-item reveal-up">
+          <img src="https://images.unsplash.com/photo-1631391011412-869a86cac1ee?q=80&w=800&auto=format&fit=crop" alt="Native and succulent front yard planting" loading="lazy">
+          <figcaption><span>Native Front Yard</span><small>San Marcos, CA</small></figcaption>
+        </figure>
+        <figure class="gallery-item reveal-up">
+          <img src="https://images.unsplash.com/photo-1674672670977-bcf517fc2376?q=80&w=800&auto=format&fit=crop" alt="Outdoor kitchen and dining pergola" loading="lazy">
+          <figcaption><span>Outdoor Kitchen</span><small>Carlsbad, CA</small></figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- PROCESS -->
   <section class="process" id="process">
     <div class="section-head light">
-      <p class="eyebrow reveal-up">How it works</p>
       <h2 class="section-title reveal-up">From overgrown to unforgettable, in four steps.</h2>
     </div>
 
@@ -201,14 +238,14 @@
         <div class="timeline-dot">2</div>
         <div class="timeline-content">
           <h3>Design & Proposal</h3>
-          <p>You get a full concept — planting plan, materials, and a transparent quote before anything is scheduled.</p>
+          <p>You get a full concept: planting plan, materials, and a transparent quote before anything is scheduled.</p>
         </div>
       </div>
       <div class="timeline-item reveal-up">
         <div class="timeline-dot">3</div>
         <div class="timeline-content">
           <h3>Build</h3>
-          <p>Our crews handle grading, hardscape, planting and irrigation — with weekly updates so you always know where things stand.</p>
+          <p>Our crews handle grading, hardscape, planting and irrigation, with weekly updates so you always know where things stand.</p>
         </div>
       </div>
       <div class="timeline-item reveal-up">
@@ -221,17 +258,76 @@
     </div>
   </section>
 
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="section-head">
+      <h2 class="section-title reveal-up">Twelve horticulturists. One crew you'll actually meet.</h2>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card team-lead reveal-up">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1659481993364-4512775ed911?q=80&w=900&auto=format&fit=crop&crop=faces" alt="Portrait of Marisol Fuentes" loading="lazy">
+        </div>
+        <div class="team-info">
+          <h3>Marisol Fuentes</h3>
+          <span>Founder &amp; Lead Landscape Architect, ASLA</span>
+          <p>Fourteen years designing gardens across San Diego and Orange County. Draws every planting plan by hand before it touches a computer.</p>
+        </div>
+      </article>
+
+      <article class="team-card reveal-up">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1732395805034-e0bf859665e5?q=80&w=700&auto=format&fit=crop&crop=faces" alt="Portrait of Grant Okafor" loading="lazy">
+        </div>
+        <div class="team-info">
+          <h3>Grant Okafor</h3>
+          <span>Certified Arborist, ISA</span>
+        </div>
+      </article>
+
+      <article class="team-card reveal-up">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1758599543111-36ce5c34fceb?q=80&w=700&auto=format&fit=crop&crop=faces" alt="Portrait of Priya Nair" loading="lazy">
+        </div>
+        <div class="team-info">
+          <h3>Priya Nair</h3>
+          <span>Horticulture Director</span>
+        </div>
+      </article>
+
+      <article class="team-card reveal-up">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1743130940714-91b221fa49ec?q=80&w=700&auto=format&fit=crop&crop=faces" alt="Portrait of Tomas Reyes" loading="lazy">
+        </div>
+        <div class="team-info">
+          <h3>Tomas Reyes</h3>
+          <span>Build Crew Lead</span>
+        </div>
+      </article>
+
+      <article class="team-card reveal-up">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1780733062101-3831bb673f22?q=80&w=700&auto=format&fit=crop&crop=faces" alt="Portrait of Devon Marsh" loading="lazy">
+        </div>
+        <div class="team-info">
+          <h3>Devon Marsh</h3>
+          <span>Irrigation &amp; Lighting Design</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- TESTIMONIALS -->
   <section class="testimonials" id="testimonials">
     <div class="section-head">
-      <p class="eyebrow reveal-up">Kind words</p>
       <h2 class="section-title reveal-up">Don't take our word for it.</h2>
     </div>
 
     <div class="testimonial-track-wrap reveal-up">
       <div class="testimonial-track" id="testimonialTrack">
         <div class="testimonial-card">
-          <p>"They turned a patch of dirt and dead grass into the best room in our house — it just happens to not have a roof."</p>
+          <p>"They turned a patch of dirt and dead grass into the best room in our house. It just happens to not have a roof."</p>
           <div class="testimonial-author"><strong>Maya R.</strong><span>Encinitas, CA</span></div>
         </div>
         <div class="testimonial-card">
@@ -253,7 +349,83 @@
   <!-- CTA BAND -->
   <section class="cta-band">
     <h2 class="reveal-up">Ready to stop staring at the same yard?</h2>
-    <a href="#contact" class="btn btn-light reveal-up" data-hover><span>Book a free consultation</span></a>
+    <a href="#contact" class="btn btn-light reveal-up" data-hover><span>Get a quote</span></a>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <h2 class="section-title reveal-up">Questions people ask before they call.</h2>
+    </div>
+
+    <div class="faq-list reveal-up">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>What does a typical project cost?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">Most full backyard redesigns in San Diego and Orange County land between $18,000 and $65,000 depending on square footage, hardscape, and whether irrigation or lighting is included. Smaller planting-only refreshes start around $4,500. Every quote is itemized before you sign anything.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>How long does a project take, start to finish?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">Design and proposal usually take two to three weeks. Once you approve it, build time runs four to ten weeks depending on scope, permitting, and material lead times. You'll get a written schedule before crews break ground, and weekly updates while they're on site.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Do you handle permits and HOA approval?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">Yes. We pull city permits for grading, retaining walls, and electrical work, and we prepare the drawings most HOA architectural committees ask for. If your community requires a formal submission, we handle the paperwork and attend the review if needed.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Do you work with our existing landscaping, or start fresh?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">Either. During the site walk we'll flag mature trees, healthy shrubs, and hardscape worth keeping, and design around them. Most projects are a mix of retained and new. A full teardown only happens if the site genuinely calls for it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>What happens after installation? Do you maintain it?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">New plantings get a 90-day establishment visit schedule at no extra cost. After that, most clients move to a seasonal maintenance plan, biweekly or monthly, covering pruning, irrigation checks, and seasonal color. It's optional, not required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Do you offer financing?</span>
+          <i class="ph-bold ph-caret-down faq-caret"></i>
+        </button>
+        <div class="faq-a-wrap">
+          <div class="faq-a-inner">
+            <p class="faq-a">We work with two third-party lenders who offer fixed-rate project financing, typically 6 to 60 month terms. We'll include financing estimates alongside the cash price in your proposal so you can compare both.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT -->
@@ -264,10 +436,33 @@
         <h2 class="section-title">Let's talk about your yard.</h2>
         <p class="contact-copy">Tell us a little about the space and what you're picturing. We'll get back to you within one business day with next steps.</p>
         <ul class="contact-details">
-          <li><span>📍</span> Serving San Diego &amp; Orange County, CA</li>
           <li><span>✉️</span> hello@verdantgrounds.example</li>
           <li><span>📞</span> (555) 013-0420</li>
         </ul>
+
+        <div class="service-area">
+          <p class="service-area-label">Where we work</p>
+          <div class="service-area-body">
+            <svg class="service-map" viewBox="0 0 260 340" role="img" aria-labelledby="serviceMapTitle">
+              <title id="serviceMapTitle">Illustrative service area map covering coastal Orange County to San Diego, California</title>
+              <path class="map-land" d="M40 0 H260 V340 H40 C10 300 60 260 30 220 C4 185 55 160 28 120 C4 88 50 60 24 20 C14 8 26 2 40 0 Z" />
+              <path class="map-coverage" d="M40 10 C60 40 20 70 42 105 C64 140 16 165 36 205 C56 245 12 280 34 330 L110 330 C110 250 100 170 100 90 C100 55 90 25 78 5 Z" />
+              <g class="map-pins">
+                <circle class="map-pin" cx="72" cy="34" r="5"></circle>
+                <text class="map-pin-label" x="84" y="38">Laguna Beach</text>
+                <circle class="map-pin" cx="60" cy="92" r="5"></circle>
+                <text class="map-pin-label" x="72" y="96">Oceanside</text>
+                <circle class="map-pin map-pin-hq" cx="66" cy="140" r="6"></circle>
+                <text class="map-pin-label" x="80" y="144">Carlsbad (studio)</text>
+                <circle class="map-pin" cx="56" cy="188" r="5"></circle>
+                <text class="map-pin-label" x="68" y="192">Encinitas</text>
+                <circle class="map-pin" cx="48" cy="258" r="5"></circle>
+                <text class="map-pin-label" x="60" y="262">La Jolla</text>
+              </g>
+            </svg>
+            <p class="service-area-note">Serving coastal Orange County through San Diego, roughly a 45-minute radius of our Carlsbad studio. Ask us if you're just outside the line, we still take some jobs a little further out.</p>
+          </div>
+        </div>
       </div>
 
       <form class="contact-form reveal-up" id="contactForm">
@@ -303,13 +498,14 @@
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
-      <a href="#process">Process</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© <span id="year"></span> Verdant Grounds. All rights reserved.</span>
-    <span>Design demo — built for testing.</span>
+    <span>Design demo, built for testing.</span>
   </div>
 </footer>
 

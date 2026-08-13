@@ -109,6 +109,69 @@ document.querySelectorAll('.stat').forEach(stat => {
   });
 });
 
+/* ---------- Before/after sliders ---------- */
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+document.querySelectorAll('[data-ba]').forEach((slider) => {
+  const frame = slider.querySelector('.ba-frame');
+  let dragging = false;
+
+  const setPos = (pct) => {
+    const clamped = Math.min(96, Math.max(4, pct));
+    frame.style.setProperty('--ba-pos', clamped + '%');
+    frame.setAttribute('aria-valuenow', Math.round(clamped));
+  };
+
+  const posFromClientX = (clientX) => {
+    const rect = frame.getBoundingClientRect();
+    return ((clientX - rect.left) / rect.width) * 100;
+  };
+
+  frame.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    frame.setPointerCapture(e.pointerId);
+    setPos(posFromClientX(e.clientX));
+  });
+  frame.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    setPos(posFromClientX(e.clientX));
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(evt =>
+    frame.addEventListener(evt, () => { dragging = false; })
+  );
+  frame.addEventListener('keydown', (e) => {
+    const current = parseFloat(getComputedStyle(frame).getPropertyValue('--ba-pos')) || 50;
+    if (e.key === 'ArrowLeft') { setPos(current - 5); e.preventDefault(); }
+    if (e.key === 'ArrowRight') { setPos(current + 5); e.preventDefault(); }
+  });
+
+  // One-time nudge on scroll-in so the drag affordance is discoverable
+  if (!prefersReducedMotion) {
+    ScrollTrigger.create({
+      trigger: slider,
+      start: 'top 80%',
+      once: true,
+      onEnter: () => {
+        gsap.fromTo(frame, { '--ba-pos': '50%' }, {
+          '--ba-pos': '34%', duration: 0.85, ease: 'power2.inOut', yoyo: true, repeat: 1,
+          onUpdate: () => {
+            const v = parseFloat(getComputedStyle(frame).getPropertyValue('--ba-pos'));
+            frame.setAttribute('aria-valuenow', Math.round(v));
+          }
+        });
+      }
+    });
+  }
+});
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.faq-q').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+  });
+});
+
 /* ---------- Gallery items stagger ---------- */
 gsap.utils.toArray('.gallery-item').forEach((item, i) => {
   gsap.to(item, {
@@ -144,12 +207,12 @@ if (track) {
   track.addEventListener('mouseleave', () => autoScroll.resume());
 }
 
-/* ---------- Contact form (demo only — no backend) ---------- */
+/* ---------- Contact form (demo only, no backend) ---------- */
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  formNote.textContent = 'Thanks! This is a demo form — no message was actually sent.';
+  formNote.textContent = 'Thanks! This is a demo form, no message was actually sent.';
   gsap.fromTo(formNote, { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.5 });
   contactForm.reset();
 });
